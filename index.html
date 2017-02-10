@@ -5,36 +5,40 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Estilos -->
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<title>IPO: Timeline</title>
+	<link rel="stylesheet" href="scss/main.css"> <!-- Resource style -->
+	<link rel="shortcut icon" href="imgs/favicon.ico">
+    <title>IPO: Timeline</title>
 </head>
 
 <body>
-
-	<section class="cd-horizontal-timeline">
+    <header>
+        <div class="titulo">
+            <h1>Línea del Tiempo: Interacción Persona - Ordenador</h1>
+        </div>
+    </header>
+	<section class="timeline-horizontal">
 		<div class="timeline">
 			<div class="events-wrapper">
 				<div class="events">
                     <!-- Fechas -->
 					<ol>
-						<li><a href="#0" data-date="01/01/1945" class="selected">Orígenes: 1945</a></li>
-						<li><a href="#0" data-date="01/01/1960">1960</a></li>
-						<li><a href="#0" data-date="01/01/1961">Mouse</a></li>
-						<li><a href="#0" data-date="01/01/1963">1963</a></li>
-						<li><a href="#0" data-date="01/01/1968">1968</a></li>
-						<li><a href="#0" data-date="01/01/1970">1970</a></li>
-						<li><a href="#0" data-date="01/01/1973">1973</a></li>
-						<li><a href="#0" data-date="01/01/1981">1981</a></li>
-                        <li><a href="#0" data-date="01/01/1983">1983</a></li>
-                        <li><a href="#0" data-date="01/01/1984">1984</a></li>
-                        <li><a href="#0" data-date="01/01/1990">1990</a></li>
-                        <li><a href="#0" data-date="01/01/2000">2000</a></li>
+						<li><a href="#0" data-date="01/01/1958" class="selected">Orígenes: 1945</a></li>
+						<li><a href="#1" data-date="01/01/1960">1960</a></li>
+						<li><a href="#2" data-date="01/01/1961">Mouse</a></li>
+						<li><a href="#3" data-date="01/01/1962">1963</a></li>
+						<li><a href="#4" data-date="01/01/1963">1968</a></li>
+						<li><a href="#5" data-date="01/01/1964">1970</a></li>
+						<li><a href="#6" data-date="01/01/1965">1973</a></li>
+						<li><a href="#7" data-date="01/01/1966">1981</a></li>
+                        <li><a href="#8" data-date="01/01/1967">1983</a></li>
+                        <li><a href="#9" data-date="01/01/1968">1984</a></li>
+                        <li><a href="#10" data-date="01/01/1969">1990</a></li>
+                        <li><a href="#11" data-date="01/01/1970">2000</a></li>
 					</ol>
 					<span class="filling-line" aria-hidden="true"></span>
 				</div>
 			</div>
-			<!-- Navegación del timeline -->
+			<!-- Flechas de navegación del timeline -->
 			<ul class="cd-timeline-navigation">
 				<li><a href="#0" class="prev inactive">Prev</a></li>
 				<li><a href="#0" class="next">Next</a></li>
@@ -43,58 +47,61 @@
         <!-- Acontecimientos -->
         <div class="events-content">
             <ol>
-                <li class="selected" data-date="01/01/1945">
+                <li class="selected" data-date="01/01/1958">
                     <h3>Orígenes: Memex</h3>
-                    <p>Bush, en su ensayo llamado “As we May Think”, escribe sobre Memex, un dispositivo de almacenamiento y gestión documental colectiva. Con Memex se podía recuperar, modificar, comentar y almacenar contenidos, y es gracias a Memex que se sientan las bases conceptuales de lo que después se llamaría hipertexto.</p>
+                    <p><img src="imgs/memex.png">Bush, en su ensayo llamado “As we May Think”, escribe sobre Memex, un dispositivo de almacenamiento y gestión documental colectiva. Con Memex se podía recuperar, modificar, comentar y almacenar contenidos, y es gracias a Memex que se sientan las bases conceptuales de lo que después se llamaría hipertexto.</p>
                 </li>
-                <li class="selected" data-date="01/01/1960">
+                <li data-date="01/01/1960">
                     <h3>Xanadu</h3>
-                    <p>Ted Nelson aplica los conceptos de hipertexto e hipermedia en el proyecto Xanadu. Xanadu tenía la idea de un universo de documentos (“docuverso”), que estaban conectados entre sí.</p>
+                    <p><img src="imgs/Ted_Nelson.jpg">Ted Nelson aplica los conceptos de hipertexto e hipermedia en el proyecto Xanadu. Xanadu tenía la idea de un universo de documentos (“docuverso”), que estaban conectados entre sí.</p>
                     <p>Licklider crea la idea del ordenador como asociado y el ordenador como medio, idea que ha dirigido la IPO desde entonces.</p>
                 </li>
-                <li class="selected" data-date="01/01/1961">
+                <li data-date="01/01/1961">
                     <h3>El inventor del Mouse</h3>
-                    <p>El inventor estadounidense Douglas Carl Engelbart, también fue pionero en la interacción persona – ordenador. Entre sus aportes está una pantalla en la que se podía ver texto y gráficos de forma simultánea.</p>
-                    <p>Engelbart también fue el creador de un dispositivo de apuntamiento (el mouse) y del primer procesador de texto que presenta las características básicas de los procesadores de texto actuales.</p>
+                    <p><img src="imgs/Engelbart.jpg">El inventor estadounidense Douglas Carl Engelbart, también fue pionero en la interacción persona – ordenador. Entre sus aportes está una pantalla en la que se podía ver texto y gráficos de forma simultánea.</p>
+                    <p><img src="imgs/mouse.jpg" class="right">Engelbart también fue el creador de un dispositivo de apuntamiento (el mouse) y del primer procesador de texto que presenta las características básicas de los procesadores de texto actuales.</p>
                 </li>
-                <li class="selected" data-date="01/01/1963">
+                <li data-date="01/01/1962">
                     <h3>Sketchpad</h3>
-                    <p>Ivan Sutherland crea el sistema Sketchpad, que permitía dibujar y manipular directamente gráficos por medio de un lápiz óptico, lo que permitía coger los objetos, moverlos y cambiarles el tamaño.</p>
+                    <p><img src="imgs/sketchpad.jpg">Ivan Sutherland crea el sistema Sketchpad, que permitía dibujar y manipular directamente gráficos por medio de un lápiz óptico, lo que permitía coger los objetos, moverlos y cambiarles el tamaño.</p>
                     <p>Se da lugar a las interfaces gráficas de usuario (GUI, Graphic User Interface) y  a los sistemas de diseño asistido por computadora (CAD, Computer-Aided Design).</p>
                 </li>
-                <li class="selected" data-date="01/01/1968">
+                <li data-date="01/01/1963">
                     <h3>NLS</h3>
-                    <p>Engelbart demuestra el uso de múltiples ventanas dentro del proyecto NLS, un sistema que además de las múltiples ventanas usaba un mouse, apuntadores e hipertexto.</p>
+                    <p><img src="imgs/NLS.jpg">Engelbart demuestra el uso de múltiples ventanas dentro del proyecto NLS, un sistema que además de las múltiples ventanas usaba un mouse, apuntadores e hipertexto.</p>
                 </li>
-                <li class="selected" data-date="01/01/1970">
+                <li data-date="01/01/1964">
                     <h3>WIMP</h3>
-                    <p>Xerox PARC populariza el mouse como un dispositivo de entrada práctico. Más adelante, en 1982 y 1984 el mouse se comercializa con el Apple Lisa y el Apple Macintosh.</p>
+                    <p><img src="imgs/wimp.jpg">Xerox PARC populariza el mouse como un dispositivo de entrada práctico. Más adelante, en 1982 y 1984 el mouse se comercializa con el Apple Lisa y el Apple Macintosh.</p>
 					<p>Los investigadores de Xerox desarrollan el paradigma WIMP (Windows, Icons, Menus, Pointers)</p>
                 </li>
-                <li class="selected" data-date="01/01/1973">
+                <li data-date="01/01/1965">
                     <h3>Xerox Alto</h3>
                     <p>Xerox lanza el primer ordenador con una interfaz gráfica de usuario: Xerox Alto.</p>
+                    <div><img src="imgs/Xerox_Alto.JPG" class="img"></div>
                 </li>
-                <li class="selected" data-date="01/01/1981">
+                <li data-date="01/01/1966">
                     <h3>Xerox Star</h3>
                     <p>Sale al mercado el primer sistema comercial que hace que el uso de la manipulación directa se extienda. Surge la idea de WYSIWYG (What You See Is What You Get), que se ha transmitido a través de procesadores de texto como Microsoft Word 2000.</p>
                 </li>
-                <li class="selected" data-date="01/01/1983">
+                <li data-date="01/01/1967">
                     <h3>Apple Lisa</h3>
-                    <p>Se lanza Apple Lisa</p>
+                    <p><img src="imgs/Apple_Lisa.jpg">Se lanza al mercado Apple Lisa. Lisa se caracterizó por ser la primera computadora personal de "bajo precio", para negocios y dirigida a individuos, con interfaz gráfica amigable para el usuario.</p>
 					<p>Ben Shneiderman acuña  el término "Manipulación directa" y define sus distintos componentes. La manipulación directa  se lleva a la práctica en Xerox con WIMP.</p>
                 </li>
-                <li class="selected" data-date="01/01/1984">
+                <li data-date="01/01/1968">
                     <h3>Macintosh</h3>
-                    <p>Ocurre el lanzamiento de la Macintosh que populariza las interfaces gráficas de usuario GUI.</p>
+                    <p><img src="imgs/Macintosh.png">Ocurre el lanzamiento del Macintosh que populariza las interfaces gráficas de usuario GUI.</p>
+                    <p>El Macintosh, lanzado en 1984, fue el primer producto comercial exitoso en usar un GUI de ventanas multipanel. Se usó una metáfora de escritorio, en la que los ficheros tenían el aspecto de hojas de papel. Los directorios usaban la imagen de una carpeta. Había un juego de accesorios de escritorio como la calculadora, el bloc de notas y el reloj de alarma que el usuario podía situar en el lugar de la pantalla que este quisiera; y se podían borrar archivos y carpetas arrastrándolos al icono de la papelera presente en la pantalla.</p>
                 </li>
-                <li class="selected" data-date="01/01/1990">
+                <li data-date="01/01/1969">
                     <h3>World Wide Web</h3>
-                    <p>Nace la World Wide Web que populariza el hipertexto y la usabilidad, además aporta una interfaz centrada en el documento y no en la aplicación que pasa los límites entre la información local y remota.</p>
+                    <p><img src="imgs/World_wide_web.png">Nace la World Wide Web que populariza el hipertexto y la usabilidad, además aporta una interfaz centrada en el documento y no en la aplicación que pasa los límites entre la información local y remota.</p>
                 </li>
-                <li class="selected" data-date="01/01/2000">
+                <li data-date="01/01/1970">
                     <h3>Computación Ubicua</h3>
                     <p>En este año se populariza la computación ubicua: Tecnología disponible todo el tiempo y en cualquier lugar, que "permite coordinar múltiples servicios computacionales, que pueden estar en la nube, en aplicaciones, redes sociales, etc."</p>
+                    <div><img src="imgs/ubicua.png" class="ubicua"></div>
                 </li>
             </ol>
         </div>
@@ -102,6 +109,19 @@
 
 
 
+    <footer>
+        <div>
+            <p><img src="imgs/Escudo_UD.png"></p>
+            <p>
+                Universidad Distrital Francisco José de Caldas -
+                Facultad de Ingeniería - Ingeniería de Sistemas
+            </p>
+            <p>Factores Humanos</p>
+            <p>Presentado por: María del Pilar García Lugo</p>
+            <br>
+            <p class="fecha">Febrero 10 de 2017</p>
+        </div>
+    </footer>
 	<!-- Scripts -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 	<script src="js/jquery-2.1.4.js"></script>
