@@ -364,7 +364,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 10px 0px 10px;
+  padding: 10px;
   border-top: 4px solid #ff6f69; }
   footer p {
     color: #fbfaf8;
