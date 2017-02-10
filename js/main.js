@@ -261,6 +261,6 @@ jQuery(document).ready(function($){
 
 	function checkMQ() {
 		//check if mobile or desktop device
-		return window.getComputedStyle(document.querySelector('.cd-horizontal-timeline'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
+		return window.getComputedStyle(document.querySelector('.timeline-horizontal'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
 	}
 });
