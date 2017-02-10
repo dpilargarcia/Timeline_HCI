@@ -358,13 +358,21 @@ header {
       font-size: 1.8em;
       vertical-align: middle; }
 
+html, body {
+  height: 100% !important; }
+
+.timeline-horizontal {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%; }
+
 footer {
   background-color: #383838;
   font-size: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 10px 0px 10px;
+  padding: 10px;
   border-top: 4px solid #ff6f69; }
   footer p {
     color: #fbfaf8;
