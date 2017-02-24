@@ -10,7 +10,8 @@ body
 a 
     color: #eeac99
     text-decoration: none
-
+.centro
+    text-align: center
     
 //Componentes principales:
 .timeline-horizontal 
@@ -59,6 +60,8 @@ a
         -webkit-transition: -webkit-transform 0.5s
         -moz-transition: -moz-transform 0.5s
         transition: transform 0.5s
+
+        
     .filling-line 
         position: absolute
         z-index: 1
@@ -88,7 +91,8 @@ a
         font-size: 1.5rem
         padding-bottom: 15px
         color: $color1
-        /* fix bug on Safari - text flickering while timeline translates */
+        
+        
         -webkit-transform: translateZ(0)
         -moz-transform: translateZ(0)
         -ms-transform: translateZ(0)
@@ -115,6 +119,7 @@ a
                 border-color: $color2
         &.older-event::after 
             border-color: $color2
+
 
     @include MQ(L)
         margin: 6em auto

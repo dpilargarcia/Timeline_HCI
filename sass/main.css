@@ -47,6 +47,9 @@ a {
   color: #eeac99;
   text-decoration: none; }
 
+.centro {
+  text-align: center; }
+
 .timeline-horizontal {
   opacity: 0;
   margin: 2em auto;
@@ -121,7 +124,6 @@ a {
     font-size: 1.5rem;
     padding-bottom: 15px;
     color: #383838;
-    /* fix bug on Safari - text flickering while timeline translates */
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
     -ms-transform: translateZ(0);
